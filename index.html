@@ -4,7 +4,7 @@
 <title>Ambiglobal Industries</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="Ambiglobal/favicon.ico">
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC"> -->
@@ -20,7 +20,12 @@ overflow-x: hidden;
 }
 body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
 /* body,h1,h2,h3,h4,h5,h6{ font-family: "fantasy", }; */
-.menu {display: none;}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
 .bgimg {
   background-repeat:repeat;
   background-size: cover;
@@ -66,10 +71,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
       text-align: center;
 }
 
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .images {
-  width:300px; 
-  height: 300px; 
+  width: 200px; 
+  height: 200px; 
   float: inline-start;
+}
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images {
+    margin-bottom: 10px;
+  }
+
+  .product-details {
+    text-align: left;
+  }
 }
 
 @keyframes textclip {
@@ -98,7 +123,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-show-small">
   <div class="w3-bar w3-small w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#menu" class="w3-bar-item w3-button">PRODUCTS</a>
     <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
     <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
@@ -118,7 +143,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
 </header>
 
 <!-- Menu Container -->
-<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+<div class="w3-container w3-black w3-padding-64 w3-large" id="menu">
   <div class="w3-content">
   
     <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px">AMBIJEE PRODUCTS</h1>
@@ -135,107 +160,161 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
     </div>
 
     <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-      <img src="twentythree.jpg" class="images">
-      <img src="twentyfour.jpg" class="images">
+      <!-- <div class="image-container"> -->
+      <img src="twentythree.jpg" class="images image-container">
+      <img src="twentyfour.jpg" class="images image-container">
+      <!-- </div> -->
 
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Styling Gel</b> <span class="w3-right w3-tag w3-dark-grey w3-round ">$11.00</span></h1>
+      <p style="font-size: 20px;"class="w3-text-grey product-details">Quick hold <br>No flakes<br>Super shine <br> Pack of 12</p>
+      <!-- </div> -->
 
-      <h1 style="font-size: 20px;"><b>HI JEE Styling Gel</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p style="font-size: 20px;"class="w3-text-grey">Quick hold <br>No flakes<br>Super shine <br> Pack of 12</p>
       <hr>
+      <!-- <div class="image-container"> -->
+      <img src="twentytwo.jpg" class="images image-container">
+      <!-- </div> -->
 
-      <img src="twentytwo.jpg" class="images">
-
-      <h1 style="font-size: 20px;"><b>HI JEE Hair Conditioner</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
-      <p  style="font-size: 20px;" class="w3-text-grey">Enriched with vitamin, protein and panthene <br> Pack of 12</p>
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Hair Conditioner</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p  style="font-size: 20px;" class="w3-text-grey product-details">Enriched with vitamin, protein and panthene <br> Pack of 12</p>
+      <!-- </div> -->
       <hr>
       
-      <img src="three.jpg" class="images">
-    
-      <h1 style="font-size: 20px;"><b>HI JEE Edge Control</b>
+      
+      <img src="three.jpg" class="images image-container">
+      
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Edge Control</b>
          <span class="w3-right w3-tag w3-dark-grey w3-round">$8.5</span></h1>
-      <p style="font-size: 20px;" class="w3-text-grey">Extra hold hair wax, <br>Extra shine,<br> Pack of 12</p>
+      <p style="font-size: 20px;" class="w3-text-grey product-details">Extra hold hair wax, <br>Extra shine,<br> Pack of 12</p>
+      <!-- </div> -->
       <hr>
 
     </div>
 
     <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-      <img src="four.jpg" class="images">
-      <img src="five.jpg" class="images">
 
-
-      <h1 style="font-size: 20px;"><b>HI JEE Carrot & Papaya Moisturizer</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.4</span></h1>
-      <p style="font-size: 20px;" class="w3-text-grey">Moisturizes skin all day long <br> Pack of 12</p>
+      <!-- <div class="image-container"> -->
+      <img src="four.jpg" class="images image-container">
+      <img src="five.jpg" class="images image-container">
+      <!-- </div> -->
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Carrot & Papaya Moisturizer</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.4</span></h1>
+      <p style="font-size: 20px;" class="w3-text-grey product-details">Moisturizes skin all day long <br> Pack of 12</p>
+      <!-- </div> -->
       <hr>
-      <img src="seven.jpg" class="images">
-      <img src="eight.jpg" class="images">
 
+      <!-- <div class="image-container"> -->
+      <img src="seven.jpg" class="images image-container">
+      <img src="eight.jpg" class="images image-container">
+      <!-- </div> -->
+
+      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;"><b>HI JEE Moisturizing Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.8</span></h1>
-      <p style="font-size: 20px;"class="w3-text-grey">Rich nourishing, rich moisturizing of tender skin <br> Pack of 12</p>
+      <p style="font-size: 20px;"class="w3-text-grey product-details">Rich nourishing, rich moisturizing of tender skin <br> Pack of 12</p>
+      <!-- </div> -->
       <hr>
-      <img src="eleven.jpg" class="images">
-      <img src="twelve.jpg" class="images">
 
+      <!-- <div class="image-container"> -->
+      <img src="eleven.jpg" class="images image-container">
+      <img src="twelve.jpg" class="images image-container">
+      <!-- </div> -->
 
-      <h1 style="font-size: 20px;"><b>HI JEE Rich  Whitening Lotion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p style="font-size: 20px;" class="w3-text-grey">Enriched with Licorice, Carrot oil & Vitamin E <br>Pack of 12 </p>
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich  Whitening Lotion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p style="font-size: 20px;" class="w3-text-grey product-details">Enriched with Licorice, Carrot oil & Vitamin E <br>Pack of 12 </p>
+      <!-- </div> -->
       <hr>
-      <img src="eighteen.jpg" class="images">
-      <img src="nineteen.jpg" class="images">
 
-      <h1 style="font-size: 20px;"><b>HI JEE Rich Gold</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p style="font-size: 20px;"  class="w3-text-grey">Whitening lotion enriched with Glutathione <br> Carrot oil & Vitamin E <br>Pack of 12</p>
+      <!-- <div class="image-container"> -->
+      <img src="eighteen.jpg" class="images image-container">
+      <img src="nineteen.jpg" class="images image-container">
+      <!-- </div> -->
+
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich Gold</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p style="font-size: 20px;"  class="w3-text-grey product-details">Whitening lotion enriched with Glutathione <br> Carrot oil & Vitamin E <br>Pack of 12</p>
+      <!-- </div> -->
       <hr>
-      
-      <img src="twentyfive.jpg" class="images">
-      <img src="twentysix.jpg" class="images">
 
-      <h1 style="font-size: 20px;"><b>HI JEE Rich Whitening Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p style="font-size: 20px;">Intense body nourishing lotion <br> Enriched with Carrot oil & Vitamin E <br>Pack of 12</p>
+      <!-- <div class="image-container"> -->
+      <img src="twentyfive.jpg" class="images image-container">
+      <img src="twentysix.jpg" class="images image-container">
+      <!-- </div> -->
+
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich Whitening Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p style="font-size: 20px;" class="product-details">Intense body nourishing lotion <br> Enriched with Carrot oil & Vitamin E <br>Pack of 12</p>
+      <!-- </div> -->
     </div>
 
 
     <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-      <img src="one.jpg" class="images">
-      <img src="two.jpg" class="images">
 
-      <h1 style="font-size: 20px;"><b>HI JEE Talcum Powder</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
-      <p  style="font-size: 20px;">Feel cool all day <br> Pack of 12</p>
-      <!-- <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-      <p class="w3-text-grey">Ask the waiter</p> -->
+      <!-- <div class="image-container"> -->
+      <img src="one.jpg" class="images image-container">
+      <img src="two.jpg" class="images image-container">
+      <!-- </div> -->
+
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Talcum Powder</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p  style="font-size: 20px;" class="product-details">Feel cool all day <br> Pack of 12</p>
+      <!-- </div>  -->
+       
       <hr>
-      
-      <img src="thirteen.jpg" class="images">
-      <img src="fourteen.jpg" class="images">
+      <!-- <div class="image-container"> -->
+      <img src="thirteen.jpg" class="images image-container">
+      <img src="fourteen.jpg" class="images image-container">
+      <!-- </div> -->
 
-      <h1 style="font-size: 20px;"><b>HI JEE Baby Lotion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p style="font-size: 20px;"> Baby mild lotion Softens and Soothens all day <br> Enriched with Vitamin E <br>Pack of 12</p>
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Baby Lotion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p style="font-size: 20px;" class="product-details"> Baby mild lotion Softens and Soothens all day <br> Enriched with Vitamin E <br>Pack of 12</p>
+      <!-- </div> -->
       <hr>
-<!--    
-      <h1 style="font-size: 20px;"><b>HI JEE Baby Bath</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$0.0</span></h1>
-      <p style="font-size: 20px;">class="w3-text-grey">Softens and Soothens all day <br> Enriched with Vitamin E</p>
-      <hr> -->
-      
-      <img src="sixteen.jpg" class="images">
-      <img src="seventeen.jpg" class="images">
+  
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Baby Bath</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p style="font-size: 20px;" class="product-details">Softens and Soothens all day <br> Enriched with Vitamin E</p>
+      <hr> 
+      <!-- <div class="image-container"> -->
+      <img src="sixteen.jpg" class="images image-container">
+      <img src="seventeen.jpg" class="images image-container">
+      <!-- </div> -->
 
-      <h1 style="font-size: 20px;"><b>HI JEE Baby Bath</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-      <p style="font-size: 20px;">Softens and Soothens all day <br> Enriched with Vitamin E</p>
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Baby Bath</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p style="font-size: 20px;" class="product-details">Softens and Soothens all day <br> Enriched with Vitamin E</p>
+      <!-- </div> -->
       <hr>
-      
-      <img src="nine.jpg" class="images">
-      <img src="ten.jpg" class="images">
+      <!-- <div class="image-container"> -->
+      <img src="nine.jpg" class="images image-container">
+      <img src="ten.jpg" class="images image-container">
+      <!-- </div> -->
 
-      <h1 style="font-size: 20px;"><b>Ambifresh</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.0</span></h1>
-      <p style="font-size: 20px;">Long lasting freshness</p>
-      
-    <img src="group1.jpg" class="images">
-    <img src="group3.jpg" class="images">
-    <p style="font-size: 25px;"><b>Ambijee ranges of product</b></p>
+      <!-- <div class="product-details"> -->
+      <h1 style="font-size: 20px;" class="product-details"><b>Ambifresh</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.0</span></h1>
+      <p style="font-size: 20px;" class="product-details">Long lasting freshness</p>
+      <!-- </div> -->
+      <!-- <div class="image-container"> -->
+        <hr>
+    <img src="group1.jpg" class="images image-container">
+    <img src="group3.JPG" class="images image-container">
+    <img src="group2.jpg" class="images image-container">
+
+    
+    <!-- <div> -->
+
+      <!-- <div class="product-details"> -->
+    <p style="font-size: 25px;" class="product-details"><b>Ambijee ranges of product</b></p>
+      <!-- </div> -->
   </div>
 </div>
-
-<!-- About Container -->
-<div class="w3-container w3-padding-64 w3-pink w3-pink w3-xlarge" id="about" style="background-image: url(background.jpeg); background-repeat: no-repeat;  background-size: contain; color: black;
+ 
+<!-- About Container  -->
+<div class="w3-container  w3-padding-64 w3-xlarge" id="about" 
+style="background-image: url(background.jpeg); background-repeat: no-repeat; 
+ background-size:cover; color: black;
 ">
   <div class="w3-content" style="color: black";>
     <h3 class="w3-center w3-xxlarge" style="margin-bottom:64px;">About Ambiglobal Industries</h3>
@@ -243,8 +322,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
       brings out the best in you. At Ambiglobal Industries, we are passionate about beauty
        and believe that every individual deserves to feel confident and radiant in their own skin. That's why we've dedicated ourselves
         to curating a wide 
-      range of exceptional beauty products (hair and skin products) that cater to diverse needs and preferences. And inspiration to express your unique beauty with environmentally friendly products.</p>
-    <img src="twentyone.jpg" style="width:400px" class="w3-circle w3-right"></p>
+      range of exceptional beauty products (hair and skin products) that cater to diverse needs 
+      and preferences. And inspiration to express your unique beauty with 
+      environmentally friendly products.</p>
+    <!-- <img src="background.jpeg" style="width:400px" class="w3-circle w3-right"></p> -->
     <br>
     <!-- <p>We are happy to have you onboard</p> -->
     </div>
@@ -316,7 +397,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
 
 <footer class="w3-center  w3-padding-48 w3-large con" id="myMap">
 
-  <div class="container">
+  <div class="container" style="color: black;">
       <div class="about-section">
           <h1>Join Our Beauty Community</h1>
           <p>
@@ -334,11 +415,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
           <p>Email: info@ambijee.com</p>
           <p>Phone: +1 (807) 744-4484</p>
           <p>Address: 26 Badagry Expressway, Ijanikin, <br> Lagos State, Nigeria</p>
-          <p>Opening Hours: Mon-Sat: 9:00AM - 6:00PM</p>
-          <p>Closing Hours: Sun: Open</p>
+          <p>Opening Hours: MON-SUN: 9:00AM - 6:00PM</p>
+          
 
       </div>
   </div>
+
+  
 </footer>
 
 
