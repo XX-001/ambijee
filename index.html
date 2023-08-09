@@ -15,6 +15,7 @@
 <style>
 body, html {height: 100%;
 margin: 0 auto;
+padding: 0;
 max-width: 100%;
 overflow-x: hidden;
 }
@@ -26,6 +27,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
   align-items: center;
 
 }
+
+.price {
+  border: 1px solid white; 
+  background-color: rgb(70, 68, 68); 
+  padding: 3px; color: white; 
+}
+
 .bgimg {
   background-repeat:repeat;
   background-size: cover;
@@ -114,6 +122,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
   margin: 0 auto;
 
 
+   
 }
 
 </style>
@@ -122,11 +131,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-show-small">
+  
   <div class="w3-bar w3-small w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <img src="logo.jpg"  style="width: 20px; height: 20px;">
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#menu" class="w3-bar-item w3-button">PRODUCTS</a>
     <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
     <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+    <!-- <img src="logo.jpg"  style="width: 20px; height: 20px;"> -->
   </div>
 </div>
   
@@ -138,13 +150,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
   <div class="w3-display-middle w3-center">
     <!-- <span class="w3-text-black w3-hide-small animate" style="font-size:100px">Ambiglobal<br>Industries</span> -->
     <span class="w3-text-white w3-show-large w3-show-medium animate" style="font-size:55px"><b>Ambiglobal<br>Industries</b></span>
+   <p style="font-size: 20px; font-weight: bolder;">Makers of HI-JEE and Ambifresh Cosmetics Products</p>
     <p><a href="#menu" class="w3-button w3-xxlarge w3-black">View products</a></p>
   </div>
 </header>
-
+ 
 <!-- Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-large" id="menu">
-  <div class="w3-content">
+  <!-- <div class="w3-content">
   
     <h1 class="w3-center w3-xxlarge" style="margin-bottom:64px">AMBIJEE PRODUCTS</h1>
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
@@ -160,104 +173,72 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
     </div>
 
     <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-      <!-- <div class="image-container"> -->
       <img src="twentythree.jpg" class="images image-container">
       <img src="twentyfour.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Styling Gel</b> <span class="w3-right w3-tag w3-dark-grey w3-round ">$11.00</span></h1>
       <p style="font-size: 20px;"class="w3-text-grey product-details">Quick hold <br>No flakes<br>Super shine <br> Pack of 12</p>
-      <!-- </div> -->
 
       <hr>
-      <!-- <div class="image-container"> -->
       <img src="twentytwo.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Hair Conditioner</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p  style="font-size: 20px;" class="w3-text-grey product-details">Enriched with vitamin, protein and panthene <br> Pack of 12</p>
-      <!-- </div> -->
       <hr>
       
       
       <img src="three.jpg" class="images image-container">
       
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Edge Control</b>
          <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
       <p style="font-size: 20px;" class="w3-text-grey product-details">Extra hold hair wax, <br>Extra shine,<br> Pack of 12</p>
-      <!-- </div> -->
       <hr>
 
     </div>
 
     <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
 
-      <!-- <div class="image-container"> -->
       <img src="four.jpg" class="images image-container">
       <img src="five.jpg" class="images image-container">
-      <!-- </div> -->
-      <!-- <div class="product-details"> -->
+
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Carrot & Papaya Moisturizer</b>  <span class="w3-right w3-tag w3-dark-grey w3-round">$7.40</span></h1>
       <p style="font-size: 20px;" class="w3-text-grey product-details">Moisturizes skin all day long <br> Pack of 12</p>
-      <!-- </div> -->
       <hr>
 
-      <!-- <div class="image-container"> -->
       <img src="seven.jpg" class="images image-container">
       <img src="eight.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;"><b>HI JEE <br>
         Rich Moisturizing Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.80</span></h1>
       <p style="font-size: 20px;"class="w3-text-grey product-details">Rich nourishing, rich moisturizing of tender skin <br> Pack of 12</p>
-      <!-- </div> -->
       <hr>
 
-      <!-- <div class="image-container"> -->
       <img src="eleven.jpg" class="images image-container">
       <img src="twelve.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich  Whitening Lotion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;" class="w3-text-grey product-details">Enriched with Licorice, Carrot oil & Vitamin E <br>Pack of 12 </p>
-      <!-- </div> -->
       <hr>
 
-      <!-- <div class="image-container"> -->
       <img src="eighteen.jpg" class="images image-container">
       <img src="nineteen.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich Gold</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;"  class="w3-text-grey product-details">Whitening lotion enriched with Glutathione <br> Carrot oil & Vitamin E <br>Pack of 12</p>
-      <!-- </div> -->
       <hr>
 
       <img src="add4.JPG" class="images image-container">
       
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE <br>  Whitening lotion and Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;" class="product-details">Intense body nourishing lotion <br> Enriched with Carrot oil & Vitamin E <br>Pack of 12</p>
-      <!-- </div> -->
       <hr>
 
-      <!-- <div class="image-container"> -->
       <img src="twentyfive.jpg" class="images image-container">
       <img src="twentysix.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich Whitening Cream</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;" class="product-details">Intense body nourishing lotion <br> Enriched with Carrot oil & Vitamin E <br>Pack of 12</p>
-      <!-- </div> -->
       <hr>
       
     <img src="add2.JPG" class="images image-container">
@@ -268,71 +249,338 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif};
 
     <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
 
-      <!-- <div class="image-container"> -->
       <img src="one.jpg" class="images image-container">
       <img src="two.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Talcum Powder</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p  style="font-size: 20px;" class="product-details">Feel cool all day <br> Pack of 12</p>
-      <!-- </div>  -->
        
       <hr>
-      <!-- <div class="image-container"> -->
       <img src="thirteen.jpg" class="images image-container">
       <img src="fourteen.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Baby Lotion</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;" class="product-details"> Baby mild lotion Softens and Soothens all day <br> Enriched with Vitamin E <br>Pack of 12</p>
-      <!-- </div> -->
       <hr>
   
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Baby Bath</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;" class="product-details">Softens and Soothens all day <br> Enriched with Vitamin E</p>
       <hr> 
-      <!-- <div class="image-container"> -->
       <img src="sixteen.jpg" class="images image-container">
       <img src="seventeen.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
       <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Baby Bath</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
       <p style="font-size: 20px;" class="product-details">Softens and Soothens all day <br> Enriched with Vitamin E</p>
-      <!-- </div> -->
       <hr>
-      <!-- <div class="image-container"> -->
       <img src="nine.jpg" class="images image-container">
       <img src="ten.jpg" class="images image-container">
-      <!-- </div> -->
 
-      <!-- <div class="product-details"> -->
-      <h1 style="font-size: 20px;" class="product-details"><b>Ambifresh</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      
+      <h1 style="font-size: 20px;" class="product-details"><b>Ambifresh <br>Air Freshener</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
       <p style="font-size: 20px;" class="product-details">Long lasting freshness</p>
-      <!-- </div> -->
-      <!-- <div class="image-container"> -->
+      
         <hr>
 
         <img src="add1.JPG" class="images image-container">
         <img src="add2.JPG" class="images image-container">
-        <!-- </div> -->
   
         
         <h1 style="font-size: 20px;" class="product-details"><b>HI JEE Rich  <br>
           Family and Petroleum Jelly</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
         <p style="font-size: 20px;" class="product-details">For both Adults and Children<br> Enriched with Carrot oil & Vitamin E <br>Pack of 12</p>
-        <!-- </div> -->
         <hr>
+
     <img src="group1.jpg" class="images image-container">
     <img src="group3.JPG" class="images image-container">
     <img src="group2.jpg" class="images image-container">
     <p style="font-size: 25px;" class="product-details"><b>Ambijee ranges of product</b></p>
-      <!-- </div> -->
+  </div> -->
+
+  <div class="head">
+    <h1>AMBIJEE PRODUCTS</h1>
+    <p>Makers of HI-JEE and Ambifresh Cosmetic Products</p>
   </div>
-</div>
+  
+  <nav>
+    <a class="product-button active" data-target="hair">Hair </a>
+    <a class="product-button" data-target="skin">Skin </a>
+    <a class="product-button" data-target="makeup">Baby/Ambifresh</a>
+  </nav>
+  
+  <div id="hair" class="products active">
+    <!-- Hair products content goes here -->
+    <!-- <h2>Hair Products</h2> -->
+    <div class="product-item">
+      <div class="product-images">
+        <img src="twentythree.jpg" alt="Hair Product 1 Front">
+        <img src="twentyfive.jpg" alt="Hair Product 1 Back">
+      </div>
+      <div class="product-info">
+        <h3>HI-JEE Styling Gel</h3>
+        <p>Quick hold; No Flakes ; Super shine</p>
+        <p>Price: <span class="price"> $11.99 </span></p>
+        <p>Pack of 12</p>
+      </div>
+    </div>
+    <hr>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="hair_product2_front.jpg" alt="Hair Product 2 Front">
+        <img src="hair_product2_back.jpg" alt="Hair Product 2 Back">
+      </div>
+      <hr>
+      <div class="product-info">
+        <h3>HI JEE Hair Conditioner</h3>
+        <p>Enriched with Vitamin, protein and panthene</p>
+        <p>Price: $24.99</p>
+        <p class="price">pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="five.jpg" alt="Hair Product 3 Front">
+        <img src="six.jpg" alt="Hair Product 3 Back">
+      </div>
+      
+      <div class="product-info">
+        <h3>Hair Product 3</h3>
+        <p>Description: Achieve silky smooth hair with this luxurious conditioner...</p>
+        <p>Price: $14.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="hair_product4_front.jpg" alt="Hair Product 4 Front">
+        <img src="hair_product4_back.jpg" alt="Hair Product 4 Back">
+      </div>
+      <div class="product-info">
+        <h3>Hair Product 4</h3>
+        <p>Description: Add volume and bounce to your hair with this styling mousse...</p>
+        <p>Price: $17.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="hair_product5_front.jpg" alt="Hair Product 5 Front">
+        <img src="hair_product5_back.jpg" alt="Hair Product 5 Back">
+      </div>
+      <div class="product-info">
+        <h3>Hair Product 5</h3>
+        <p>Description: Tame frizz and achieve sleek hair with this smoothing serum...</p>
+        <p>Price: $21.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="hair_product6_front.jpg" alt="Hair Product 6 Front">
+        <img src="hair_product6_back.jpg" alt="Hair Product 6 Back">
+      </div>
+      <div class="product-info">
+        <h3>Hair Product 6</h3>
+        <p>Description: Maintain vibrant color with this color-protecting shampoo...</p>
+        <p>Price: $15.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="hair_product7_front.jpg" alt="Hair Product 7 Front">
+        <img src="hair_product7_back.jpg" alt="Hair Product 7 Back">
+      </div>
+      <div class="product-info">
+        <h3>Hair Product 7</h3>
+        <p>Description: Style your hair with ease using this versatile hair spray...</p>
+        <p>Price: $11.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="skin" class="products">
+    <!-- Skin products content goes here -->
+    <h2>Skin Products</h2>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product1_front.jpg" alt="Skin Product 1 Front">
+        <img src="skin_product1_back.jpg" alt="Skin Product 1 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 1</h3>
+        <p>Description: Achieve radiant and healthy skin with this premium skincare essential...</p>
+        <p>Price: $29.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <!-- Additional Skin Products -->
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product2_front.jpg" alt="Skin Product 2 Front">
+        <img src="skin_product2_back.jpg" alt="Skin Product 2 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 2</h3>
+        <p>Description: Pamper yourself with this rejuvenating face mask for a spa-like experience...</p>
+        <p>Price: $12.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product3_front.jpg" alt="Skin Product 3 Front">
+        <img src="skin_product3_back.jpg" alt="Skin Product 3 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 3</h3>
+        <p>Description: Maintain youthful skin with this anti-aging serum...</p>
+        <p>Price: $39.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product4_front.jpg" alt="Skin Product 4 Front">
+        <img src="skin_product4_back.jpg" alt="Skin Product 4 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 4</h3>
+        <p>Description: Cleanse and refresh your skin with this gentle foaming cleanser...</p>
+        <p>Price: $9.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product5_front.jpg" alt="Skin Product 5 Front">
+        <img src="skin_product5_back.jpg" alt="Skin Product 5 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 5</h3>
+        <p>Description: Hydrate and moisturize your skin with this nourishing lotion...</p>
+        <p>Price: $16.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product6_front.jpg" alt="Skin Product 6 Front">
+        <img src="skin_product6_back.jpg" alt="Skin Product 6 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 6</h3>
+        <p>Description: Achieve a clear complexion with this spot treatment gel...</p>
+        <p>Price: $13.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="skin_product7_front.jpg" alt="Skin Product 7 Front">
+        <img src="skin_product7_back.jpg" alt="Skin Product 7 Back">
+      </div>
+      <div class="product-info">
+        <h3>Skin Product 7</h3>
+        <p>Description: Rejuvenate tired eyes with this nourishing eye cream...</p>
+        <p>Price: $19.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="makeup" class="products">
+    <!-- Makeup products content goes here -->
+    <h2>Makeup Products</h2>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product1_front.jpg" alt="Makeup Product 1 Front">
+        <img src="makeup_product1_back.jpg" alt="Makeup Product 1 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 1</h3>
+        <p>Description: Express yourself with this vibrant eyeshadow palette featuring a range of shades...</p>
+        <p>Price: $39.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <!-- Additional Makeup Products -->
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product2_front.jpg" alt="Makeup Product 2 Front">
+        <img src="makeup_product2_back.jpg" alt="Makeup Product 2 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 2</h3>
+        <p>Description: Enhance your natural beauty with this long-lasting lip color...</p>
+        <p>Price: $16.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product3_front.jpg" alt="Makeup Product 3 Front">
+        <img src="makeup_product3_back.jpg" alt="Makeup Product 3 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 3</h3>
+        <p>Description: Define and shape your brows with this eyebrow pencil...</p>
+        <p>Price: $8.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product4_front.jpg" alt="Makeup Product 4 Front">
+        <img src="makeup_product4_back.jpg" alt="Makeup Product 4 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 4</h3>
+        <p>Description: Achieve a flawless complexion with this foundation that provides full coverage...</p>
+        <p>Price: $27.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product5_front.jpg" alt="Makeup Product 5 Front">
+        <img src="makeup_product5_back.jpg" alt="Makeup Product 5 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 5</h3>
+        <p>Description: Add a pop of color to your cheeks with this blush compact...</p>
+        <p>Price: $14.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product6_front.jpg" alt="Makeup Product 6 Front">
+        <img src="makeup_product6_back.jpg" alt="Makeup Product 6 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 6</h3>
+        <p>Description: Create a bold look with this high-pigment lipstick...</p>
+        <p>Price: $12.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <div class="product-images">
+        <img src="makeup_product7_front.jpg" alt="Makeup Product 7 Front">
+        <img src="makeup_product7_back.jpg" alt="Makeup Product 7 Back">
+      </div>
+      <div class="product-info">
+        <h3>Makeup Product 7</h3>
+        <p>Description: Achieve a stunning look with this versatile makeup palette...</p>
+        <p>Price: $32.99</p>
+        <p>pack of 12</p>
+      </div>
+    </div>
+  </div>
+</div> 
  
+
 <!-- About Container  -->
 <div class="w3-container  w3-padding-64 w3-xlarge" id="about" 
 style="background-image: url(background.jpeg); background-repeat: no-repeat; 
@@ -448,21 +696,43 @@ style="background-image: url(background.jpeg); background-repeat: no-repeat;
 
 
 <script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" w3-pink", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-pink";
-}
-document.getElementById("myLink").click();
+
+
+
+
+    const productButtons = document.querySelectorAll('.product-button');
+    const productSections = document.querySelectorAll('.products');
+    
+    productButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-target');
+        
+        productSections.forEach(section => {
+          section.classList.remove('active');
+        });
+        
+        document.getElementById(target).classList.add('active');
+        productButtons.forEach(btn => {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
+      });
+    });
+  
+// function openMenu(evt, menuName) {
+//   var i, x, tablinks;
+//   x = document.getElementsByClassName("menu");
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablink");
+//   for (i = 0; i < x.length; i++) {
+//      tablinks[i].className = tablinks[i].className.replace(" w3-pink", "");
+//   }
+//   document.getElementById(menuName).style.display = "block";
+//   evt.currentTarget.firstElementChild.className += " w3-pink";
+// }
+// document.getElementById("myLink").click();
 </script>
 
 </body>

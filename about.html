@@ -10,9 +10,10 @@
     margin: 0;
     padding: 0;
   }
-  header {
-    background-color: #f2f2f2;
+  .head{
+    background-color: black;
     padding: 20px;
+    color: white;
     text-align: center;
   }
   nav {
@@ -30,6 +31,7 @@
     background-color: #e60067; /* Deep Pink */
   }
   .products {
+    background-color: whitesmoke;
     display: none;
     padding: 20px;
   }
@@ -38,15 +40,20 @@
   }
   .product-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
+    overflow-x: auto;
   }
-  .product-images {
+  .product-images img{
     max-width: 150px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
-  .product-images {
+  .product-images.img {
     display: flex;
+    width: 150px;
+  height: auto;
+  margin-right: 10px;
+  border: 3px solid #333;
     align-items: center;
   }
   .product-images img {
@@ -57,14 +64,38 @@
   }
   .product-info {
     flex: 1;
+    margin-left: 20px;
+
+    
+
+  }
+
+   /* Responsive adjustments for smaller screens */
+   @media (max-width: 768px) {
+    .product-item {
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    .product-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .product-info {
+      flex: 1;
+      width: 100%;
+    }
   }
 </style>
 </head>
 <body>
-  <header>
+  <div class="head">
     <h1>Welcome to Beauty Company</h1>
     <p>Your one-stop shop for beauty products</p>
-  </header>
+  </div>
   
   <nav>
     <a class="product-button active" data-target="hair">Hair Products</a>
@@ -74,7 +105,7 @@
   
   <div id="hair" class="products active">
     <!-- Hair products content goes here -->
-    <h2>Hair Products</h2>
+    <!-- <h2>Hair Products</h2> -->
     <div class="product-item">
       <div class="product-images">
         <img src="three.jpg" alt="Hair Product 1 Front">
@@ -83,15 +114,17 @@
       <div class="product-info">
         <h3>Hair Product 1</h3>
         <p>Description: Revitalize your locks with this nourishing hair care product...</p>
-        <p>Price: $19.99</p>
+        <p>Price: <span style="border: 1px solid white; background-color: rgb(70, 68, 68); padding: 3px; color: white;" > $19.99 </span></p>
         <p>pack of 12</p>
       </div>
     </div>
+    <hr>
     <div class="product-item">
       <div class="product-images">
         <img src="hair_product2_front.jpg" alt="Hair Product 2 Front">
         <img src="hair_product2_back.jpg" alt="Hair Product 2 Back">
       </div>
+      <hr>
       <div class="product-info">
         <h3>Hair Product 2</h3>
         <p>Description: Transform your hair with this innovative styling serum...</p>
@@ -101,9 +134,10 @@
     </div>
     <div class="product-item">
       <div class="product-images">
-        <img src="hair_product3_front.jpg" alt="Hair Product 3 Front">
-        <img src="hair_product3_back.jpg" alt="Hair Product 3 Back">
+        <img src="five.jpg" alt="Hair Product 3 Front">
+        <img src="six.jpg" alt="Hair Product 3 Back">
       </div>
+      
       <div class="product-info">
         <h3>Hair Product 3</h3>
         <p>Description: Achieve silky smooth hair with this luxurious conditioner...</p>
